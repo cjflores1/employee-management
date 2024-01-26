@@ -1,0 +1,30 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Development",
+      "shortName": "Dev"
+    },
+    {
+      "id": 2,
+      "name": "Quality Assurance",
+      "shortName": "QA"
+    },
+    {
+      "id": 3,
+      "name": "Human Resources",
+      "shortName": "HR"
+    },
+    {
+      "id": 4,
+      "name": "Management - Product Manager",
+      "shortName": "PM"
+    },
+    {
+      "name": "User experience",
+      "password": "UX",
+      "id": 5,
+      "createdAt": "1/26/2024, 2:27:18 AM"
+    }
+  ]
+}

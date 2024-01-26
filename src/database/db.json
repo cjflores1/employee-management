@@ -1,0 +1,111 @@
+{
+  "employees": [
+    {
+      "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+      "name": "Charles",
+      "lastname": "Flores",
+      "position": "Developer Jr",
+      "skills": [
+        "Javascript",
+        "PHP",
+        "Java",
+        "Python"
+      ],
+      "email": "charlesflores@correo.com",
+      "address": {
+        "country": "Bolivia",
+        "street": "Av. Entre Rios No. 4960"
+      },
+      "startDate": "2024-01-01",
+      "department": "Dev",
+      "salary": 3500,
+      "createdAt": "1/25/2024, 1:15:44 PM"
+    },
+    {
+      "id": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+      "name": "Jhonny",
+      "lastname": "Calle",
+      "position": "Recruiter",
+      "skills": [
+        "Scrum",
+        "PMB"
+      ],
+      "email": "jhonnycalle@correo.com",
+      "address": {
+        "country": "Peru",
+        "street": "Figueroa No. 40"
+      },
+      "startDate": "2023-01-01",
+      "department": "HR",
+      "salary": 4500,
+      "createdAt": "1/25/2023, 1:15:44 PM"
+    },
+    {
+      "id": "d8be2362-7b68-4ea4-a1f6-03f8bc4eede7",
+      "name": "Luis",
+      "lastname": "Martinez",
+      "position": "QA manual",
+      "skills": [
+        "Jira",
+        "Trello",
+        "Functional testing",
+        "E2E testing"
+      ],
+      "email": "luismartinez@correo.com",
+      "address": {
+        "country": "Bolivia",
+        "street": "Camacho No. 410"
+      },
+      "startDate": "2023-06-01",
+      "department": "QA",
+      "salary": 4600,
+      "createdAt": "6/25/2023, 1:15:44 PM"
+    },
+    {
+      "name": "Maria",
+      "lastname": "Huampu",
+      "position": "QA automation",
+      "skills": [
+        "Jira",
+        "Trello",
+        "Functional testing",
+        "Performance testing",
+        "E2E testing",
+        "Selenium"
+      ],
+      "email": "mariahuampu@correo.com",
+      "address": {
+        "country": "Bolivia",
+        "street": "Calatayud No. 960"
+      },
+      "startDate": "2023-07-11",
+      "department": "QA",
+      "salary": 4350,
+      "id": "7dff83c9-d9b3-4bad-8ac7-4cca28cfbda6",
+      "createdAt": "1/25/2024, 2:09:36 PM",
+      "updatedAt": "1/25/2024, 2:12:50 PM"
+    },
+    {
+      "name": "Laura",
+      "lastname": "Alcon",
+      "position": "Dev Backend",
+      "skills": [
+        "Java",
+        "Javascript",
+        "Spring Boot",
+        "Nest JS"
+      ],
+      "email": "lauraalcon@correo.com",
+      "address": {
+        "country": "Bolivia",
+        "street": "Camacho No. 159"
+      },
+      "startDate": "2023-07-11",
+      "department": "Dev",
+      "salary": 4350,
+      "id": "168b217b-eb5d-4db2-98e0-9439c78db6cc",
+      "createdAt": "1/25/2024, 10:51:35 PM",
+      "updatedAt": "1/25/2024, 10:52:08 PM"
+    }
+  ]
+}

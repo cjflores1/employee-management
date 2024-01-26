@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "charles",
+      "password": "$2b$10$.3Amaz1GMu.PygVKk4yXGu6pDrOVRvKzdnbv2G1pb6X/9sQwY.uES",
+      "createdAt": "1/26/2024, 1:44:07 AM"
+    },
+    {
+      "name": "admin",
+      "password": "$2b$10$c1wDArXVL8up7gu.UurSseH1MumbHKM3Uv6vINDyo4g9sZZqthBZW",
+      "createdAt": "1/26/2024, 1:44:44 AM"
+    },
+    {
+      "name": "jhonny",
+      "password": "$2b$10$CIvngEeynfyL2QIThM8mUu3MUUFplUXUoQAGf1wOvDSIBvl.QLX0K",
+      "createdAt": "1/26/2024, 3:07:09 AM"
+    }
+  ]
+}
