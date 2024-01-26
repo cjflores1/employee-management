@@ -15,3 +15,9 @@ This application uses JSON files to simulate a database. These JSON files are in
 Develop mode `npm run dev`
 
 Production mode `npm start`
+
+## CREDENTIALS TO GET THE TOKEN
+Use Postman as client rest.
+Send these credentials: `{"name": "admin", "password": "admin"}` as **body request** to **localhost:3000/api/v1/users/login** endpoint with **POST** HTTP method selected.
+### Set the authorization
+Set the ***"Authorization"** property with the **Type** **"Bearer Token"** and finally set the token field with the token generated.
