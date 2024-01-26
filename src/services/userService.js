@@ -12,7 +12,7 @@ const getAllUsers = () => {
 const createNewUser = (newUser) => {
     const UserToInsert = {
         ...newUser,
-        createdAt: new Date().toLocaleString('en-US', { timeZone: "UTC" }),
+        createdAt: new Date().toLocaleString('en-US', { timeZone: 'UTC' }),
     };
     try {
         const createdUser = User.createNewUser(UserToInsert);

@@ -6,11 +6,11 @@ const userService = require('../services/userService');
 const getAllUsers = (req, res) => {
     try {
         const allUsers = userService.getAllUsers();
-        res.send({ status: "OK", data: allUsers });
+        res.send({ status: 'OK', data: allUsers });
     } catch (error) {
         res
             .status(error?.status || 500)
-            .send({ status: "FAILED", data: { error: error?.message || error } });
+            .send({ status: 'FAILED', data: { error: error?.message || error } });
     }
 };
 
@@ -23,8 +23,8 @@ const createNewUser = async (req, res) => {
         res
             .status(400)
             .send({
-                status: "FAILED",
-                data: { error: "One of the following keys is missing or is empty in request body: 'name', 'password'" }
+                status: 'FAILED',
+                data: { error: 'One of the following keys is missing or is empty in request body: \'name\', \'password\'' }
             });
         return;
     }
@@ -33,18 +33,18 @@ const createNewUser = async (req, res) => {
     const newUser = {
         name: body.name,
         password: hashedPassword,
-    }
+    };
 
     try {
         const createUser = userService.createNewUser(newUser);
 
         const token = jwt.sign({id: newUser.name}, process.env.SECRET, { expiresIn: 60 * 60 * 24});
 
-        res.status(201).send({ status: "OK", data: {...createUser, token} });
+        res.status(201).send({ status: 'OK', data: {...createUser, token} });
     } catch (error) {
         res
             .status(error?.status || 500)
-            .send({ status: "FAILED", data: { error: error?.message || error } });
+            .send({ status: 'FAILED', data: { error: error?.message || error } });
     }
 };
 
@@ -56,22 +56,22 @@ const userLogin = async (req, res) => {
             res 
                 .status(401)
                 .send({
-                    status: "FAILED",
-                    data: { error: `Token invalid` }
+                    status: 'FAILED',
+                    data: { error: 'Token invalid' }
                 });
             return;
         }
-        const token = jwt.sign({name: user.name}, process.env.SECRET,{ expiresIn: "12h" });
-        res.status(200).send({ status: "OK", data: {name: user.name, token} });
+        const token = jwt.sign({name: user.name}, process.env.SECRET,{ expiresIn: '12h' });
+        res.status(200).send({ status: 'OK', data: {name: user.name, token} });
     } catch (error) {
         res
             .status(error?.status || 500)
-            .send({ status: "FAILED", data: { error: error?.message || error } });
+            .send({ status: 'FAILED', data: { error: error?.message || error } });
     }
-}
+};
 
 module.exports = {
     getAllUsers,
     createNewUser,
     userLogin,
-}
+};

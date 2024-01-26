@@ -66,7 +66,7 @@ const createNewEmployee = (newEmployee) => {
         const isAlreadyAdded = DB.employees.findIndex((employee) => {
             employee.name === newEmployee.name &&
                 employee.lastname === newEmployee.lastname &&
-                employee.email === newEmployee.email
+                employee.email === newEmployee.email;
         }) > -1;
         if (isAlreadyAdded) {
             throw {
@@ -96,7 +96,7 @@ const updateOneEmployee = (employeeId, changes) => {
         const isAlreadyAdded = DB.employees.findIndex((employee) => {
             employee.name === changes.name &&
                 employee.lastname === changes.lastname &&
-                employee.email === changes.email
+                employee.email === changes.email;
         }) > -1;
         if (isAlreadyAdded) {
             throw {
@@ -151,4 +151,4 @@ module.exports = {
     createNewEmployee,
     updateOneEmployee,
     deleteOneEmployee,
-}
+};

@@ -7,13 +7,13 @@ function verifyToken (req, res, next) {
         .status(401)
         .send({
             auth: false,
-            message: "No token provided"
+            message: 'No token provided'
         });
         return;
     }
     const decoded = jwt.verify(token.split(' ')[1], process.env.SECRET);
     req.userId = decoded.name;
     next();
-};
+}
 
 module.exports = verifyToken;

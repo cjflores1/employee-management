@@ -35,7 +35,7 @@ const findUser = (username) => {
             throw {
                 status: 404,
                 message: `The user ${username} does not exists`
-            }
+            };
         }
         return userFound;
     } catch (error) {
@@ -57,4 +57,4 @@ module.exports = {
     createNewUser,
     findUser,
     validatePassword,
-}
+};

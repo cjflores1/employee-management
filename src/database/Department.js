@@ -29,4 +29,4 @@ const createNewDepartment = (newDepartment) => {
 module.exports = {
     getAllDepartments,
     createNewDepartment,
-}
+};

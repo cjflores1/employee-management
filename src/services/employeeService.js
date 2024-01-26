@@ -24,7 +24,7 @@ const createNewEmployee = (newEmployee) => {
     const employeeToInsert = {
         ...newEmployee,
         id: uuid(),
-        createdAt: new Date().toLocaleString('en-US', { timeZone: "UTC" }),
+        createdAt: new Date().toLocaleString('en-US', { timeZone: 'UTC' }),
     };
     try {
         const createdEmployee = Employee.createNewEmployee(employeeToInsert);

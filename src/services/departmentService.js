@@ -14,7 +14,7 @@ const createNewDepartment = (newDepartment) => {
     const departmentToInsert = {
         ...newDepartment,
         id: lengthDepartments + 1,
-        createdAt: new Date().toLocaleString('en-US', { timeZone: "UTC" }),
+        createdAt: new Date().toLocaleString('en-US', { timeZone: 'UTC' }),
     };
     try {
         const createdDepartment = Department.createNewDepartment(departmentToInsert);
